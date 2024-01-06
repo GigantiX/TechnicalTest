@@ -138,7 +138,7 @@
                                 <rect key="frame" x="20" y="157" width="353" height="651"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="103" id="FhP-x2-bMV" customClass="StudentsTableViewCell" customModule="TechnicalTest" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="103" id="FhP-x2-bMV" customClass="StudentsTableViewCell" customModule="TechnicalTest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="353" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FhP-x2-bMV" id="Nuh-W2-fdS">
@@ -151,9 +151,8 @@
                                                         <constraint firstAttribute="width" constant="100" id="Jy3-RV-8SM"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POV-IR-Laf">
-                                                    <rect key="frame" x="113" y="28" width="50" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POV-IR-Laf">
+                                                    <rect key="frame" x="110" y="27" width="218" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -167,7 +166,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="POV-IR-Laf" firstAttribute="leading" secondItem="AQb-GS-zw9" secondAttribute="trailing" constant="5" id="9GR-46-2D5"/>
                                                 <constraint firstAttribute="bottom" secondItem="AQb-GS-zw9" secondAttribute="bottom" constant="5" id="Y9g-GW-BIP"/>
+                                                <constraint firstItem="POV-IR-Laf" firstAttribute="top" secondItem="Nuh-W2-fdS" secondAttribute="topMargin" constant="16" id="ZVP-gF-Vp8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="POV-IR-Laf" secondAttribute="trailing" constant="5" id="a4y-5a-2NH"/>
                                                 <constraint firstItem="AQb-GS-zw9" firstAttribute="top" secondItem="Nuh-W2-fdS" secondAttribute="top" constant="5" id="rJg-JB-h2W"/>
                                                 <constraint firstItem="AQb-GS-zw9" firstAttribute="leading" secondItem="Nuh-W2-fdS" secondAttribute="leading" constant="5" id="uL1-CW-IZs"/>
                                             </constraints>

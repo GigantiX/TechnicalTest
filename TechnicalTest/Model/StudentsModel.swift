@@ -10,5 +10,5 @@ import Foundation
 struct StudentsModel{
     var name: String
     var address: String
-    
+    var picture: String
 }
