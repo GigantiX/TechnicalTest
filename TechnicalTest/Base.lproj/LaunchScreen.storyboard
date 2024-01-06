@@ -16,19 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-alfagift" translatesAutoresizingMaskIntoConstraints="NO" id="K1e-ME-qIG">
-                                <rect key="frame" x="66.666666666666686" y="351" width="260" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="7Im-20-zav"/>
-                                    <constraint firstAttribute="height" constant="150" id="QuE-4n-vin"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash 3" translatesAutoresizingMaskIntoConstraints="NO" id="18m-9D-VNE">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="K1e-ME-qIG" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="96v-dp-hqF"/>
-                            <constraint firstItem="K1e-ME-qIG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zCv-ZP-MbM"/>
+                            <constraint firstItem="18m-9D-VNE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bsq-Ey-3hR"/>
+                            <constraint firstItem="18m-9D-VNE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Fuo-PH-n9r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="18m-9D-VNE" secondAttribute="trailing" id="eWF-rV-WdC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="18m-9D-VNE" secondAttribute="bottom" id="vzb-aK-QEk"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,7 +36,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo-alfagift" width="5001" height="1960"/>
+        <image name="Splash 3" width="393" height="852"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

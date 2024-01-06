@@ -17,7 +17,9 @@ class StudentsTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        VCimage.layer.cornerRadius = VCimage.frame.width / 2
+        VCimage.clipsToBounds = true
+        VCimage.contentMode = .scaleAspectFill
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

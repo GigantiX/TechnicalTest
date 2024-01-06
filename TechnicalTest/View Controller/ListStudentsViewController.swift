@@ -10,6 +10,23 @@ import UIKit
 class ListStudentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     var arr = [StudentsModel]()
     
+    @IBAction func onLogout(_ sender: Any) {
+        
+        let alertController = UIAlertController(title: "Logout", message: "Are you sure?", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Logout", style: .default) { (action) in
+            self.toLoginPage()
+                
+        }
+        
+        let noAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alertController.addAction(okAction)
+        alertController.addAction(noAction)
+
+        present(alertController, animated: true, completion: nil)
+        
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arr.count
     }
@@ -26,7 +43,12 @@ class ListStudentsViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 105
+    }
+    func toLoginPage (){
+        if let nextView = storyboard?.instantiateViewController(identifier: "loginPage"){
+            navigationController?.setViewControllers([nextView], animated: true)
+        }
     }
     
     @IBOutlet weak var TVstudents: UITableView!
