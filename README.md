@@ -1,5 +1,7 @@
 Additional Technical Test iOS
 
+Note : Use iPhone 14 Pro to best render UI
+
 Username : alfagift-admin
 
 Pass : asdf
@@ -7,7 +9,7 @@ Pass : asdf
 Device info
 - Macbook Pro M1 Pro
 - XCode Beta
-- Emulator iOS 17
+- Emulator iPhone 14 Pro (iOS 17)
 
 Develop time : 1.5 days
 
