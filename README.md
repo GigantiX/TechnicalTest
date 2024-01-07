@@ -1,6 +1,6 @@
 Additional Technical Test iOS
 
-Note : Use iPhone 14 Pro to best render UI
+Note : Use iPhone 14 Pro frame setting to get best render UI
 
 Username : alfagift-admin
 
