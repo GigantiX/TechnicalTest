@@ -4,6 +4,11 @@ Username : alfagift-admin
 
 Pass : asdf
 
+Device info
+- Macbook Pro M1 Pro
+- XCode Beta
+- Emulator iOS 17
+
 Develop time : 1.5 days
 
 Screenshots link : https://drive.google.com/drive/folders/1xiNveShgP82yrWVlTkbdEAPDmm6UynWr?usp=sharing
