@@ -44,6 +44,7 @@ class ViewController: UIViewController {
             navigationController?.setViewControllers([studentPage], animated: true)
         }
         
+        //V2
 //        if let nextView = storyboard?.instantiateViewController(identifier: "listStudents"){
 //            navigationController?.setViewControllers([nextView], animated: true)
 //        }
