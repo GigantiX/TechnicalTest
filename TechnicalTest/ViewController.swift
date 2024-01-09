@@ -37,9 +37,18 @@ class ViewController: UIViewController {
             popUpMsg(title: "Error", message: "Username or Password is incorect")
         }
         
-        if let nextView = storyboard?.instantiateViewController(identifier: "listStudents"){
-            navigationController?.setViewControllers([nextView], animated: true)
+        if let nextPage = storyboard?.instantiateViewController(identifier: "listStudents"){
+            var studentPage = nextPage as! ListStudentsViewController
+            studentPage.usrname = adminUser
+            
+            navigationController?.setViewControllers([studentPage], animated: true)
         }
+        
+//        if let nextView = storyboard?.instantiateViewController(identifier: "listStudents"){
+//            navigationController?.setViewControllers([nextView], animated: true)
+//        }
+        
+        
     }
     
     func popUpMsg(title: String, message: String ){

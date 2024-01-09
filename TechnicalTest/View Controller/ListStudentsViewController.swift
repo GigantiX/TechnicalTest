@@ -9,6 +9,10 @@ import UIKit
 
 class ListStudentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     var arr = [StudentsModel]()
+    var usrname: String?
+    
+    @IBOutlet var myVIew: UIView!
+    
     
     @IBAction func onLogout(_ sender: Any) {
         
@@ -59,6 +63,11 @@ class ListStudentsViewController: UIViewController, UITableViewDelegate, UITable
         TVstudents.dataSource = self
         TVstudents.delegate = self
         
+        if arr.count % 2 == 0 {
+            arr.append(StudentsModel(name: usrname!, address: "N/A", picture: "pic4"))
+        } else {
+            myVIew.backgroundColor = UIColor.red
+        }
 
     }
     
